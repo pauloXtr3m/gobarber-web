@@ -26,7 +26,7 @@ const SignUp: React.FC = () => {
   const history = useHistory();
 
   const handleSubmit = useCallback(
-    async (data): Promise<void> => {
+    async (data: SignUpFormData): Promise<void> => {
       try {
         formRef.current?.setErrors({});
 
